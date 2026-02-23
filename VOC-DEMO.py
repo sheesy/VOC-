@@ -11,6 +11,7 @@ from datetime import datetime
 import platform
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+import urllib.request
 
 # ==========================================
 # 0. 初始化与环境辅助函数
@@ -19,9 +20,20 @@ HISTORY_DIR = "voc_history_projects"
 if not os.path.exists(HISTORY_DIR):
     os.makedirs(HISTORY_DIR)
 
-# 直接使用项目文件夹里自带的黑体文件！
+
+# 终极版：自动检测并下载中文字体
 def get_chinese_font():
-    return "simhei.ttf"
+    font_filename = "simhei.ttf"
+    # 如果当前文件夹没有这个字体文件，就自动去可靠的开源地址下载一个
+    if not os.path.exists(font_filename):
+        try:
+            # 下载标准黑体
+            font_url = "https://github.com/StellarCN/scp_zh/raw/master/fonts/SimHei.ttf"
+            urllib.request.urlretrieve(font_url, font_filename)
+        except Exception as e:
+            st.error(f"字体自动下载失败: {e}")
+            return None
+    return font_filename
 
 # ==========================================
 # 1. 页面配置与侧边栏
@@ -203,4 +215,5 @@ else:
                     st.balloons()
                 except Exception as e:
                     st.error(f"❌ Kimi API 调用失败：{e}")
+
 
