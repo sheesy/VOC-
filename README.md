@@ -1,16 +1,42 @@
-# 🛒 VOC-Analyzer: 电商评价智能挖掘与 AI 洞察平台
+# 🛒 VOC-Analyzer: 智能电商评价洞察与 AI 商业分析引擎
 
-这是一个基于 Python 和 Streamlit 构建的轻量级 Web 数据产品。
-通过结合传统 NLP 技术（Jieba + TF-IDF）、机器学习降维算法（NMF/LDA）以及大语言模型（Kimi LLM），实现对海量非结构化评价数据的**自动化痛点挖掘**与**商业报告生成**。
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![Moonshot AI](https://img.shields.io/badge/LLM-Kimi_API-purple.svg)](https://platform.moonshot.cn/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🌟 核心特性
-- **全链路可视化**：文本清洗对比、全局高频词柱状图、情绪核心词云图一目了然。
-- **无监督痛点聚类**：采用 NMF 矩阵分解算法，精准提取短文本下的隐式产品缺陷。
-- **AI 深度归因**：接入大模型，将干瘪的特征词转化为高管级业务洞察报告。
-- **本地状态持久化**：分析结果自动打包为 JSON 存档，历史项目秒级调阅。
+> **🚀 核心价值**：将传统的“人工逐条阅读差评 -> 主观打标签 -> 耗时数天撰写报告”的低效流程，转化为“**一键上传 -> 算法降维聚类 -> LLM 秒级输出高管级商业洞察**”的自动化闭环。用技术跨越数据鸿沟，赋能产品与运营团队高效决策。
 
-## 🚀 快速启动
-1. 安装依赖：`pip install -r requirements.txt`
-2. 运行系统：`streamlit run VOC-DEMO.py`
-3. 在左侧边栏输入大模型 API Key，上传 CSV 数据即可体验（目前仅接入Kimi，需自行准备API）。
+---
 
+**🌐 在线体验地址**：[点击这里访问我的云端部署产品](https://你的名字-voc.streamlit.app/) *(请替换为你的真实链接)*
+
+---
+
+## 🌟 核心产品特性
+
+* **🔪 纯净降噪的 NLP 流水线**：内置专属电商停用词库，结合 `Jieba` 分词与 `TF-IDF` 算法，精准过滤情绪废话，锁定核心实体特征词。
+* **🧠 无监督深度痛点挖掘**：抛弃繁琐的人工打标，引入 `Scikit-Learn NMF` (非负矩阵分解) 机器学习算法。在海量非结构化短文本中，自动收敛并精准聚类出 N 个核心产品痛点（如：漏光、模具公差、按键异响）。
+* **🤖 AI 商业洞察自动生成**：无缝接入 **Kimi (月之暗面) 大模型 API**。将算法提取的干瘪特征词组装为专业 Prompt，一键输出包含“痛点定性”、“深层归因”与“迭代建议”的 Markdown 商业报告。
+* **📊 全链路可视化与存档**：提供直观的词频柱状图与高亮情绪词云图。内置本地 JSON 状态持久化机制，历史分析项目秒级调阅，沉淀企业数据资产。
+
+---
+
+## 🏗️ 系统架构设计
+
+本项目采用轻量级解耦架构，兼顾了算法的严谨性与前端展现的敏捷性：
+
+1.  **Data Input (数据层)**：支持标准化 CSV 评价数据源接入。
+2.  **NLP Pipeline (预处理层)**：正则清洗 -> Jieba 深度分词 -> TF-IDF 权重计算。
+3.  **Machine Learning (算法层)**：NMF 矩阵分解 / Gensim LDA 主题模型。
+4.  **LLM Agent (决策层)**：Moonshot API 零样本推理与长文本生成。
+5.  **Application (展示层)**：基于 Streamlit 框架的响应式 Web 交互界面。
+
+---
+
+## 🚀 极速本地部署
+
+### 1. 克隆项目
+```bash
+git clone [https://github.com/sheesy/VOC-Analyzer.git](https://github.com/sheesy/VOC-Analyzer.git)
+cd VOC-Analyzer
