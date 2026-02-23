@@ -19,14 +19,9 @@ HISTORY_DIR = "voc_history_projects"
 if not os.path.exists(HISTORY_DIR):
     os.makedirs(HISTORY_DIR)
 
+# 直接使用项目文件夹里自带的黑体文件！
 def get_chinese_font():
-    sys_name = platform.system()
-    if sys_name == "Windows":
-        return "C:/Windows/Fonts/simhei.ttf"
-    elif sys_name == "Darwin":
-        return "/System/Library/Fonts/PingFang.ttc"
-    else:
-        return None
+    return "simhei.ttf"
 
 # ==========================================
 # 1. 页面配置与侧边栏
@@ -208,3 +203,4 @@ else:
                     st.balloons()
                 except Exception as e:
                     st.error(f"❌ Kimi API 调用失败：{e}")
+
