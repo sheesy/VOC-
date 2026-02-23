@@ -1,5 +1,16 @@
-# Welcome to GitHub Desktop!
+# 🛒 VOC-Analyzer: 电商评价智能挖掘与 AI 洞察平台
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+这是一个基于 Python 和 Streamlit 构建的轻量级 Web 数据产品。
+通过结合传统 NLP 技术（Jieba + TF-IDF）、机器学习降维算法（NMF/LDA）以及大语言模型（Kimi LLM），实现对海量非结构化评价数据的**自动化痛点挖掘**与**商业报告生成**。
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+## 🌟 核心特性
+- **全链路可视化**：文本清洗对比、全局高频词柱状图、情绪核心词云图一目了然。
+- **无监督痛点聚类**：采用 NMF 矩阵分解算法，精准提取短文本下的隐式产品缺陷。
+- **AI 深度归因**：接入大模型，将干瘪的特征词转化为高管级业务洞察报告。
+- **本地状态持久化**：分析结果自动打包为 JSON 存档，历史项目秒级调阅。
+
+## 🚀 快速启动
+1. 安装依赖：`pip install -r requirements.txt`
+2. 运行系统：`streamlit run VOC-DEMO.py`
+3. 在左侧边栏输入大模型 API Key，上传 CSV 数据即可体验。
+
