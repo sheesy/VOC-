@@ -9,7 +9,7 @@
 
 ---
 
-**🌐 在线体验地址**：[点击这里访问我的云端部署产品](https://bi7e7gi7jkznernmxwlyp5.streamlit.app/) *(请替换为你的真实链接)*
+**🌐 在线体验地址**：[点击这里访问我的云端部署产品](https://bi7e7gi7jkznernmxwlyp5.streamlit.app/) 
 
 ---
 
