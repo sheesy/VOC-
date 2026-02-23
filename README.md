@@ -49,7 +49,8 @@ pip install -r requirements.txt
 
 streamlit run VOC-DEMO.py
 
-运行后：浏览器会自动打开 http://localhost:8501。在左侧边栏填入你的 Kimi API Key 即可开始分析。
+运行后：浏览器会自动打开 http://localhost:8501。
+在左侧边栏填入你的 Kimi API Key 即可开始分析。
 
 
 ## 📂 目录结构说明
