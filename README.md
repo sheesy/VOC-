@@ -37,15 +37,15 @@
 ## 🚀 极速本地部署
 
 ### 1. 克隆项目
-git clone [https://github.com/sheesy/VOC-Analyzer.git](https://github.com/sheesy/VOC-Analyzer.git)
-cd VOC-Analyzer
+*git clone [https://github.com/sheesy/VOC-.git](https://github.com/sheesy/VOC-.git)
+*cd VOC-Analyzer
 
 ### 2.安装依赖环境
-pip install -r requirements.txt
+*pip install -r requirements.txt
 
 ### 3.配置 API 秘钥与启动
-本项目已实现 API Key 前端动态注入，代码本体零硬编码，保护开发者隐私。
-streamlit run VOC-DEMO.py
+*本项目已实现 API Key 前端动态注入，代码本体零硬编码，保护开发者隐私。
+*streamlit run VOC-DEMO.py
 
 运行后：浏览器会自动打开 http://localhost:8501。在左侧边栏填入你的 Kimi API Key 即可开始分析。
 
@@ -53,8 +53,8 @@ streamlit run VOC-DEMO.py
 ## 📂 目录结构说明
 
 VOC-Analyzer/
-├── VOC-DEMO.py               # Streamlit 主程序应用引擎
-├── requirements.txt          # 核心依赖清单
-├── simhei.ttf                # 解决云端 Linux 环境下中文词云乱码的内置字体包
-├── monitor_reviews.csv       # (可选) 提供给测试用户的 2000 条显示器 Mock 评价数据
-└── voc_history_projects/     # 历史项目本地存档缓存库 (运行时自动生成)
+*├── VOC-DEMO.py               # Streamlit 主程序应用引擎
+*├── requirements.txt          # 核心依赖清单
+*├── simhei.ttf                # 解决云端 Linux 环境下中文词云乱码的内置字体包
+*├── monitor_reviews.csv       # (可选) 提供给测试用户的 2000 条显示器 Mock 评价数据
+*└── voc_history_projects/     # 历史项目本地存档缓存库 (运行时自动生成)
