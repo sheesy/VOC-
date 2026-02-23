@@ -12,5 +12,5 @@
 ## 🚀 快速启动
 1. 安装依赖：`pip install -r requirements.txt`
 2. 运行系统：`streamlit run VOC-DEMO.py`
-3. 在左侧边栏输入大模型 API Key，上传 CSV 数据即可体验。
+3. 在左侧边栏输入大模型 API Key，上传 CSV 数据即可体验（目前仅接入Kimi，需自行准备API）。
 
